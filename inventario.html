@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventario de Herramientas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="Penacec.jpg" alt="Logo PENACEC" class="logo">
+    <h1>Inventario</h1>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="historico.html">Histórico</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Registrar Herramienta</h2>
+      <form id="formInventario">
+        <input type="date" name="fecha" required>
+        <input type="text" name="codigo" placeholder="Código" required>
+        <input type="text" name="herramienta" placeholder="Herramienta" required>
+        <input type="text" name="entrega" placeholder="Entregado por" required>
+        <input type="text" name="recibe" placeholder="Recibido por" required>
+        <input type="text" name="lugar" placeholder="Lugar / Obra" required>
+        <input type="text" name="observaciones" placeholder="Observaciones">
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Lista de Herramientas</h2>
+      <table id="tablaInventario">
+        <thead>
+          <tr>
+            <th>Fecha</th><th>Código</th><th>Herramienta</th><th>Entrega</th>
+            <th>Recibe</th><th>Lugar</th><th>Observaciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
